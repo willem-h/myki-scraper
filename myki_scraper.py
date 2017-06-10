@@ -56,5 +56,3 @@ class MykiScraper(object):
         username_field.send_keys(os.environ['MYKI_USERNAME'])
         password_field.send_keys(os.environ['MYKI_PASSWORD'])
         login_button.click()
-
-MykiScraper().execute()

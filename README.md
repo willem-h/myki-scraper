@@ -10,9 +10,3 @@ To get up going run:
 ```bash
 bin/setup
 ```
-
-When that's done, execute the scraper with:
-
-```bash
-bin/go
-```
