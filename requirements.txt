@@ -1,0 +1,2 @@
+python-dotenv==0.6.4
+selenium==3.4.3
