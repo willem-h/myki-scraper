@@ -26,8 +26,8 @@ class MykiScraper(object):
     def _card(self, row):
         return Card(**{
             'number': row[0].text,
-            'holder': row[1].text,
-            'value': row[2].text
+            'user': row[1].text,
+            'balance': row[2].text
         })
 
     def _cards(self):
