@@ -1,3 +1,4 @@
 .env
 ghostdriver.log
+transit-c7e41-*.json
 __pycache__/

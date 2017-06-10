@@ -4,7 +4,11 @@ Pull data about your transit cards. Currently supporting:
 * [GoCard](https://gocard.translink.com.au/) - Brisbane, Australia
 
 You need to have already registered for accounts with these services.
-Then rename `.env-example` to `.env` and fill in your details.
+
+This also syncs the scraped data to a Firebase Realtime database which will also
+have to be setup separately.
+
+Rename `.env-example` to `.env` and fill in your details.
 
 ## Development
 

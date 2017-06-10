@@ -18,11 +18,12 @@ class GoCardScraper(object):
         self.content = self.session.post(login_url, login_data, verify=True).text
 
     def execute(self):
-        return Card(**{
+        return [Card(**{
             'number': self._get_card_number(),
             'user': self._get_user(),
-            'balance': self._get_balance()
-        })
+            'balance': self._get_balance(),
+            'provider': 'gocard'
+        })]
 
     def _get_balance(self):
         soup = BeautifulSoup(self.content, 'html5lib')
