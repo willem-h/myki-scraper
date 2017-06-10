@@ -1,5 +1,10 @@
-# Myki Scraper
-Pull data about your Myki cards by scraping the mymyki.com.au website.
+# Transit Card Scraper
+Pull data about your transit cards. Currently supporting:
+* [Myki](https://www.mymyki.com.au/) - Melbourne, Australia
+* [GoCard](https://gocard.translink.com.au/) - Brisbane, Australia
+
+You need to have already registered for accounts with these services.
+Then rename `.env-example` to `.env` and fill in your details.
 
 ## Development
 
