@@ -19,3 +19,9 @@ To get up going run:
 ```bash
 bin/setup
 ```
+
+To sync your tranist data to Firebase run:
+
+```bash
+bin/go
+```
