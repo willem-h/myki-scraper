@@ -1,5 +1,6 @@
 import os
 import pyrebase
+import json
 from dotenv import load_dotenv, find_dotenv
 from gocard_scraper import GoCardScraper
 from myki_scraper import MykiScraper
@@ -11,7 +12,7 @@ config = {
     'authDomain': os.environ['FIREBASE_AUTH_DOMAIN'],
     'databaseURL': os.environ['FIREBASE_DATABASE_URL'],
     'storageBucket': os.environ['FIREBASE_STORAGE_BUCKET'],
-    'serviceAccount': os.environ['FIREBASE_PRIVATE_KEY']
+    'serviceAccount': json.loads(os.environ['FIREBASE_PRIVATE_KEY'])
 }
 
 firebase = pyrebase.initialize_app(config)

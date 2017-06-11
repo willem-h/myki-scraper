@@ -2,3 +2,4 @@
 ghostdriver.log
 transit-c7e41-*.json
 __pycache__/
+venv/
